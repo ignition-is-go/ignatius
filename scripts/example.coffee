@@ -7,11 +7,9 @@ robot.respond /update/i, (res) ->
 
     exec = require('child_process').exec
 
-    exec('git pull', function (error, stdout, stderr) {
-      if(error) {
+    exec 'git pull',  (error, stdout, stderr) ->
+      if error
         res.send(error)
         res.send(stderr)
-      } else {
+      else
         msg.send(stdout)
-      }
-    })
