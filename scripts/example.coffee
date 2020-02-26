@@ -5,7 +5,7 @@ module.exports = (robot) ->
 
 robot.respond /update/i, (res) ->
 
-    var exec = require('child_process').exec
+    exec = require('child_process').exec
 
     exec('git pull', function (error, stdout, stderr) {
       if(error) {
