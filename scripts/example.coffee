@@ -3,7 +3,7 @@ module.exports = (robot) ->
   robot.hear /yo/i, (res) ->
   res.send "yo"
 
-robot.respond /update/i, (res) ->
+  robot.respond /update/i, (res) ->
 
     exec = require('child_process').exec
 
