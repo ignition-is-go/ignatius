@@ -7,4 +7,4 @@ module.exports = (robot) ->
         res.send(stderr)
       else
         res.send(stdout)
-    robot.messageRoom "trev", "Updated!"
+  robot.messageRoom "trev", "Updated!"
