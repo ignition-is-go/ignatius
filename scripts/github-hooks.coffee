@@ -1,4 +1,3 @@
 module.exports = (robot) ->
-
   robot.router.post '/hook', (req, res) ->
-    robot.messageRoom "trev", req
+    robot.messageRoom 'UN5H6KSG3', req
